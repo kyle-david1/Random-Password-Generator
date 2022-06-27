@@ -1,9 +1,28 @@
+
+
+
+
+
+function userPreferences() {
+  console.log("its working!");
+}
+
+
+
+
+
+
+
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  // var password = generatePassword();
+  userPreferences()
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -13,15 +32,17 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword(){
+// function generatePassword(){
   // your Code goes here 
 
   // Pseudocode
 
 
-  // prompt  = length (8-128 characters)
+  // prompt  = length (8-20 characters)
     // let pwdLength = prompt("how many characters?");
     // console.log(pwdlength)
+      // let pwdLength = prompt("How many characters?")
+      // console.log(pwdLength);
   
   // confirm - lowercase confirm, uppercase, numberic, special characters
     // let numbers = confirm("do you want numbers?)
@@ -47,9 +68,9 @@ function generatePassword(){
   
   
   
-  return password;
+// return password;
 
 
-}
+// }
  
 
