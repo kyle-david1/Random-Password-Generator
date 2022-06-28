@@ -3,9 +3,29 @@
 
 
 
-function userPreferences() {
-  console.log("its working!");
-}
+// function userPreferences() {
+//   var pwdLength = parseInt(prompt("how many characters?"))
+//   console.log(pwdLength);
+//   }
+//  if (pwdLength >8 && pwdLength <128){
+//     alert("must be at least 8 characters");
+//  }
+ 
+
+
+
+  
+  // var userOptions = {
+  //   wantsUpper: uppercase
+  // }
+  // console.log(userOptions)
+  // return userOptions;
+
+
+
+
+
+
 
 
 
@@ -22,6 +42,24 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
   // var password = generatePassword();
+  let lowercase = window.confirm("do you want lowercase?");
+    console.log(lowercase);
+  let uppercase = window.confirm("do you want uppercase?");
+    console.log(uppercase);
+  let numbers = window.confirm("do you want numbers?");
+    console.log(numbers);
+  let specialCharacters = window.confirm("do you want special characters?");
+    console.log(specialCharacters);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   userPreferences()
   var passwordText = document.querySelector("#password");
 
@@ -38,10 +76,10 @@ generateBtn.addEventListener("click", writePassword);
   // Pseudocode
 
 
-  // prompt  = length (8-20 characters)
-    // let pwdLength = prompt("how many characters?");
-    // console.log(pwdlength)
-      // let pwdLength = prompt("How many characters?")
+  prompt  = length(8 < 128) 
+    let pwdLength = prompt("how many characters?");
+    console.log(pwdlength)
+
       // console.log(pwdLength);
   
   // confirm - lowercase confirm, uppercase, numberic, special characters
