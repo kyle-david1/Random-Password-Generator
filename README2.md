@@ -1,0 +1,1 @@
+code snippet taken from stack overflow to define the arrays

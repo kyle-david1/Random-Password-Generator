@@ -1,8 +1,3 @@
-
-
-
-
-
 // function userPreferences() {
 //   var pwdLength = parseInt(prompt("how many characters?"))
 //   console.log(pwdLength);
@@ -33,7 +28,10 @@
 
 
 
-
+// confirm - lowercase confirm, uppercase, numberic, special characters
+    // let numbers = confirm("do you want numbers?)
+    // console.log(numbers);
+  // create var to hold answer to prompt/confirm 
 
 
 // Assignment Code
@@ -50,22 +48,44 @@ function writePassword() {
     console.log(numbers);
   let specialCharacters = window.confirm("do you want special characters?");
     console.log(specialCharacters);
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  userPreferences()
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
 }
+//  This piece of code was firing before adding in the characters list
+
+
+// writePassword(passwordLength)
+  
+  // list of numbers, special characters, uppercase and lowercase
+    // array 
+    // combine arrays into one array (look at math link 
+    // Random choose characters 
+    // create a string set equal to password var
+    // array method to check if something is in an array (array.length?)
+  
+  
+  var numberChars = "0123456789";
+  var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowerChars = "abcdefghijklmnopqrstuvwxyz";
+  var specialChars = "/[!@#$%^&*()_+\-=\[\]{};"
+  var allChars = numberChars + upperChars + lowerChars + specialChars;
+  var randPasswordArray = Array(passwordLength);
+  randPasswordArray[0] = numberChars;
+  randPasswordArray[1] = upperChars;
+  randPasswordArray[2] = lowerChars;
+  randPasswordArray[3] = specialChars;
+  randPasswordArray = randPasswordArray.fill(allChars, 4);
+  return shuffleArray(randPasswordArray.map(function(x) { return x[Math.floor(Math.random() * x.length)] })).join('');
+
+
+  // create a string set equal to password var
+    // array method to check if something is in an array (array.length?)
+  
+  
+  
+  
+  
+ 
+
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
@@ -82,10 +102,6 @@ generateBtn.addEventListener("click", writePassword);
 
       // console.log(pwdLength);
   
-  // confirm - lowercase confirm, uppercase, numberic, special characters
-    // let numbers = confirm("do you want numbers?)
-    // console.log(numbers);
-  // create var to hold answer to prompt/confirm 
   
   // function to validate user answers 
   // if and equality operators 
@@ -110,5 +126,4 @@ generateBtn.addEventListener("click", writePassword);
 
 
 // }
- 
 
