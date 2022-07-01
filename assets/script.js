@@ -2,7 +2,7 @@ var numberChars = "0123456789";
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowerChars = "abcdefghijklmnopqrstuvwxyz";
 var specialChars = "/[!@#$%^&*()_+\-=\[\]{};";
-var allChars = [numberChars, upperChars, lowerChars, specialChars];
+var allChars = [];
 
 
   var confirmLength = function(item) {
@@ -13,8 +13,8 @@ var allChars = [numberChars, upperChars, lowerChars, specialChars];
     }
     if (item>128){
       passwordLength = window.prompt("Must be less than 128")
-      confirmLength(passwordLength);
-  }
+      confirmLength(passwordLength)
+  }}
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -54,10 +54,13 @@ let specialCharacters = window.confirm("do you want special characters?");
   }
 
   // do for loop here add random letters to password string
-  for (var i = 8; i < allChars.length; i++) { 
+  for (var i = 0; i < allChars.length; i++){ 
     console.log("generatePassword");
 }
   // how to take a random value from an array 
+// var allChars = [];
+// var random = Math.floor(Math.random() * allChars.length);
+// console.log(random, allChars[random]);
   // this index from the array 
   return password
 }
